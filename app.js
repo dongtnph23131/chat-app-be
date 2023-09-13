@@ -15,7 +15,7 @@ app.use('/api', userRouter)
 app.use('/api',chatRouter)
 app.use('/api',messageRouter)
 const server = require('http').createServer(app)
-
+//
 const io = require('socket.io')(server);
 io.on('connection', () => {
 
