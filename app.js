@@ -26,7 +26,7 @@ const serverApp = server.listen(process.env.PORT, async () => {
 const io = require('socket.io')(serverApp, {
     pingTimeout: 60000,
     cors: {
-        origin: 'https://chat-app-self-six.vercel.app'
+        origin: 'http://localhost:3000'
     }
 });
 
